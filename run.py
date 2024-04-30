@@ -1,3 +1,17 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import random
+
+from list import words
+
+def get_username():
+    while True:
+        try:
+            name = input("Please enter your name here: ")
+            if len(name) >= 3:
+                return name
+            else:
+                print("Sorry. Username must be at least 3 letters or more")
+        except KeyboardInterrupt:
+            print("Exiting")
+            exit()
+username = get_username()
+print("Hello,", username)
