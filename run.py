@@ -2,6 +2,11 @@ import random
 
 from list import words
 
+print("Welcome to hangman!")
+
+print("Hangman is about guessing words.")
+print("You have  ")
+
 def get_username():
     while True:
         try:
@@ -13,5 +18,11 @@ def get_username():
         except KeyboardInterrupt:
             print("Exiting")
             exit()
+
 username = get_username()
 print("Hello,", username)
+
+def choose_words():
+    return random.choice(words)
+    
+
