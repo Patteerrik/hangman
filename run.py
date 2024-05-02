@@ -6,15 +6,15 @@ print("Welcome to hangman!")
 print("Hangman is about guessing words.")
 print("You have 7 attempts")
 
-def ask_continue():
-    while True:
-     choice = input("Do you want to continue to play the game?")
-     if choice == "y":
-        return True
-     elif choice == "n":
-        return False
-     else:
-        print("Please enter a valid response 'y' or 'n'")
+##def ask_continue():
+    ##while True:
+     ##choice = input("Do you want to continue to play the game?")
+     ##if choice == "y":
+       ## return True
+     ##elif choice == "n":
+       ## return False
+     ##else:
+        ##print("Please enter a valid response 'y' or 'n'")
 
 
 def get_username():
@@ -32,25 +32,42 @@ def get_username():
 username = get_username()
 print("Hello,", username)
 
+
+
 def choose_words():
     return random.choice(words)
 
 
 def play_game():
-   words = choose_words()
-   game = hangman.Hangman(words)
+   word = choose_words()
+   game = hangman.Hangman(word)
    print("New game is starting")
-   return game
+     
+   hidden_word = "_" * len(word)
+   guessed_letters = []
+   
+   while not game.game_over():
+        print("Current word:", hidden_word)
+        print("Guessed letters:",guessed_letters)
+        guess = input("Enter a letter: ").lower()
 
-while True:
-    game = play_game()
-    guessed_letters = []
-    while not game.game_over():
-        guess = input("Enter a letter: ")
+        if guess in guessed_letters:
+            print("You have already guessed that letter!")
+            continue
 
-    if not ask_continue():
-        print("Thank you for playing the game")
-        break
+        guessed_letters.append(guess)
+
+        if guess in word:
+            print("Correct!")
+        else:
+            print("Incorrect!")
+
+   print("Word was:", word)
+   if not ask_continue():
+       print("Thank you for playing the game")
+            
+
+play_game()
 
 
 
