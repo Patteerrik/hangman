@@ -6,14 +6,14 @@ print("Welcome to hangman!")
 print("Hangman is about guessing words.")
 print("You have 7 attempts")
 
-def continue():
-    while True
+def ask_continue():
+    while True:
      choice = input("Do you want to continue to play the game?")
      if choice == "y":
         return True
      elif choice == "n":
         return False
-     else
+     else:
         print("Please enter a valid response 'y' or 'n'")
 
 
@@ -35,10 +35,22 @@ print("Hello,", username)
 def choose_words():
     return random.choice(words)
 
-words = []
-print("New game is starting")
 
-while not game_over():
-guess_word = input("Enter a letter: ")
+def play_game():
+   words = choose_words()
+   game = hangman.Hangman(words)
+   print("New game is starting")
+   return game
+
+while True:
+    game = play_game()
+    guessed_letters = []
+    while not game.game_over():
+        guess = input("Enter a letter: ")
+
+    if not ask_continue():
+        print("Thank you for playing the game")
+        break
+
 
 
