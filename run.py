@@ -47,7 +47,7 @@ def play_game():
    guessed_letters = []
    
    while not game.game_over():
-        print("Current word:", hidden_word)
+        print("Current word:"," ".join(hidden_word))
         print("Guessed letters:",guessed_letters)
         guess = input("Enter a letter: ").lower()
 
@@ -59,6 +59,7 @@ def play_game():
 
         if guess in word:
             print("Correct!")
+            
         else:
             print("Incorrect!")
 
