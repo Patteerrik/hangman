@@ -1,3 +1,15 @@
+class Hangman:
+    def __init__(self, word):
+      self.word = word
+      self.guessed_letters = []
+
+    def game_over(self):
+       if len(self.guessed_letters) > len(self.word):
+          print("Game over!")
+          return True
+       else:
+          return False
+          
 h1 = ["      ________",
       "     |       |",
       "     |        ",
