@@ -2,6 +2,8 @@ import random
 
 from list import words
 
+import hangman
+
 print("Welcome to hangman!")
 
 print("Hangman is about guessing words.")
