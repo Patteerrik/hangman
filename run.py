@@ -1,13 +1,21 @@
 import random
-
 from list import words
-
 import hangman
 
 print("Welcome to hangman!")
-
 print("Hangman is about guessing words.")
-print("You have 5 attempts")
+print("You have 7 attempts")
+
+def continue():
+    while True
+     choice = input("Do you want to continue to play the game?")
+     if choice == "y":
+        return True
+     elif choice == "n":
+        return False
+     else
+        print("Please enter a valid response 'y' or 'n'")
+
 
 def get_username():
     while True:
@@ -26,5 +34,11 @@ print("Hello,", username)
 
 def choose_words():
     return random.choice(words)
-    
+
+words = []
+print("New game is starting")
+
+while not game_over():
+guess_word = input("Enter a letter: ")
+
 
