@@ -7,7 +7,7 @@ import hangman
 print("Welcome to hangman!")
 
 print("Hangman is about guessing words.")
-print("You have  ")
+print("You have 5 attempts")
 
 def get_username():
     while True:
