@@ -1,6 +1,8 @@
 import random
+import sys
 from list import words
 import hangman
+
 
 print("Welcome to hangman!")
 print("Hangman is about guessing words.")
@@ -52,6 +54,10 @@ def play_game():
             print("Guessed letters:",guessed_letters)
             guess = input("Enter a letter: ").lower()
 
+            if guess == "exit":
+                print("Exiting the game!")
+                sys.exit()
+
             if guess in guessed_letters:
                 print("You have already guessed that letter!")
                 continue
@@ -69,12 +75,15 @@ def play_game():
                 print("Incorrect!")
 
         print("Word was:"," ". join(hidden_word))
-        play_again = input("Do you want to play again? (y/n):")
-        if play_again.lower() == "n":
-            print("Thank you for playing!")
-            break
-        elif play_again.lower != "y":
-            print("Did you mean yes or no?")
+
+        while True:
+            play_again = input("Do you want to play again? (y/n):").lower()
+            if play_again == "n":
+                print("Thank you for playing!")
+            elif play_again == "y":
+                break
+            else:
+                print("Please enter 'y' or 'n'!")
             
 
 play_game()
