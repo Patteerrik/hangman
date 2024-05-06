@@ -68,7 +68,7 @@ def play_game():
                 game.display_hangman()
                 print("Incorrect!")
 
-        print("Word was:", word)
+        print("Word was:"," ". join(hidden_word))
         play_again = input("Do you want to play again? (y/n):")
         if play_again == "n":
             print("Thank you for playing!")
