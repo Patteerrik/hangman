@@ -70,10 +70,11 @@ def play_game():
 
         print("Word was:"," ". join(hidden_word))
         play_again = input("Do you want to play again? (y/n):")
-        if play_again == "n":
+        if play_again.lower() == "n":
             print("Thank you for playing!")
             break
-       
+        elif play_again.lower != "y":
+            print("Did you mean yes or no?")
             
 
 play_game()
