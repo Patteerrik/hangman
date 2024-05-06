@@ -2,13 +2,24 @@ class Hangman:
     def __init__(self, word):
       self.word = word
       self.guessed_letters = []
+      self.wrong_guesses = 0
 
     def game_over(self):
-       if len(self.guessed_letters) > len(self.word):
+       if self.wrong_guesses >= 7:
           print("Game over!")
           return True
        else:
           return False
+
+    def update_wrong_guesses(self):
+        self.wrong_guesses += 1
+
+    def display_hangman(self):
+        hangmans = [h1, h2, h3, h4, h5, h6, h7]
+        if self.wrong_guesses <=7:
+            print("".join(hangmans[self.wrong_guesses - 1]))
+        else:
+            print("".join(hangmans[-1]))
           
 h1 = ["      ________",
       "     |       |",
