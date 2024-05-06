@@ -72,6 +72,7 @@ def play_game():
         play_again = input("Do you want to play again? (y/n):")
         if play_again == "n":
             print("Thank you for playing!")
+            break
        
             
 
