@@ -39,33 +39,38 @@ def choose_words():
 
 
 def play_game():
-   word = choose_words()
-   game = hangman.Hangman(word)
-   print("New game is starting")
+    while True:
+        word = choose_words()
+        game = hangman.Hangman(word)
+        print("New game is starting")
      
-   hidden_word = "_" * len(word)
-   guessed_letters = []
+        hidden_word = ["_"] * len(word)
+        guessed_letters = []
    
-   while not game.game_over():
-        print("Current word:"," ".join(hidden_word))
-        print("Guessed letters:",guessed_letters)
-        guess = input("Enter a letter: ").lower()
+        while "_" in hidden_word:
+            print("Current word:"," ".join(hidden_word))
+            print("Guessed letters:",guessed_letters)
+            guess = input("Enter a letter: ").lower()
 
-        if guess in guessed_letters:
-            print("You have already guessed that letter!")
-            continue
+            if guess in guessed_letters:
+                print("You have already guessed that letter!")
+                continue
 
-        guessed_letters.append(guess)
+            guessed_letters.append(guess)
 
-        if guess in word:
-            print("Correct!")
-            
-        else:
-            print("Incorrect!")
+            if guess in word:
+                for i, letter in enumerate(word):
+                    if letter == guess:
+                        hidden_word[i] = guess
+                print("Correct!")
+            else:
+                print("Incorrect!")
 
-   print("Word was:", word)
-   if not ask_continue():
-       print("Thank you for playing the game")
+        print("Word was:", word)
+        play_again = input("Do you want to play again? (y/n):")
+        if play_again == "n":
+            print("Thank you for playing!")
+       
             
 
 play_game()
