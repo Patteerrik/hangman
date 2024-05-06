@@ -47,7 +47,7 @@ def play_game():
         hidden_word = ["_"] * len(word)
         guessed_letters = []
    
-        while "_" in hidden_word:
+        while "_" in hidden_word and game.wrong_guesses < 7:
             print("Current word:"," ".join(hidden_word))
             print("Guessed letters:",guessed_letters)
             guess = input("Enter a letter: ").lower()
@@ -64,6 +64,8 @@ def play_game():
                         hidden_word[i] = guess
                 print("Correct!")
             else:
+                game.update_wrong_guesses()
+                game.display_hangman()
                 print("Incorrect!")
 
         print("Word was:", word)

@@ -16,10 +16,10 @@ class Hangman:
 
     def display_hangman(self):
         hangmans = [h1, h2, h3, h4, h5, h6, h7]
-        if self.wrong_guesses <=7:
-            print("".join(hangmans[self.wrong_guesses - 1]))
+        if self.wrong_guesses <= 7:
+            print("\n".join(hangmans[self.wrong_guesses - 1]))
         else:
-            print("".join(hangmans[-1]))
+            print("\n".join(hangmans[-1]))
           
 h1 = ["      ________",
       "     |       |",
