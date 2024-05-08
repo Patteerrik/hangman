@@ -14,12 +14,13 @@ class Hangman:
     def update_wrong_guesses(self):
         self.wrong_guesses += 1
 
-    def display_hangman(self):
+    def display_hangman(self, hidden_word):
         hangmans = [h1, h2, h3, h4, h5, h6, h7]
         if self.wrong_guesses <= 7:
             print("\n".join(hangmans[self.wrong_guesses - 1]))
         else:
             print("\n".join(hangmans[-1]))
+            print("The word was:", " ".join(hidden_word))
 
     def game_over(self, hidden_word):
       if self.wrong_guesses >= 7:

@@ -75,10 +75,13 @@ def play_game():
                 print("Correct!")
             else:
                 game.update_wrong_guesses()
-                game.display_hangman()
+                game.display_hangman(hidden_word)
                 print("Incorrect!")
 
-        print("Word was:", " ".join(hidden_word))
+        
+
+        game.display_hangman(hidden_word)
+            
 
         while True:
             play_again = input("Do you want to play again? (y/n):").lower()
