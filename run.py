@@ -54,6 +54,10 @@ def play_game():
             print("Guessed letters:",guessed_letters)
             guess = input("Enter a letter: ").lower()
 
+            if not guess.isalpha() or len(guess) != 1:
+                print("Please enter a single letter!")
+                continue
+
             if guess == "exit":
                 print("Exiting the game!")
                 sys.exit()
@@ -74,12 +78,13 @@ def play_game():
                 game.display_hangman()
                 print("Incorrect!")
 
-        print("Word was:"," ". join(hidden_word))
+        print("Word was:", " ".join(hidden_word))
 
         while True:
             play_again = input("Do you want to play again? (y/n):").lower()
             if play_again == "n":
                 print("Thank you for playing!")
+                return
             elif play_again == "y":
                 break
             else:
