@@ -20,6 +20,13 @@ class Hangman:
             print("\n".join(hangmans[self.wrong_guesses - 1]))
         else:
             print("\n".join(hangmans[-1]))
+
+    def game_over(self, hidden_word):
+      if self.wrong_guesses >= 7:
+            print("Game over! The word was:", " ".join(hidden_word))
+            return True
+      else:
+            return False
           
 h1 = ["      ________",
       "     |       |",
