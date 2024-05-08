@@ -1,15 +1,12 @@
 class Hangman:
     def __init__(self, word):
-      self.word = word
-      self.guessed_letters = []
-      self.wrong_guesses = 0
+        self.word = word
+        self.guessed_letters = []
+        self.wrong_guesses = 0
 
     def game_over(self):
-       if self.wrong_guesses >= 7:
-          print("Game over!")
-          return True
-       else:
-          return False
+        return self.wrong_guesses >= 7
+            
 
     def update_wrong_guesses(self):
         self.wrong_guesses += 1
@@ -20,14 +17,10 @@ class Hangman:
             print("\n".join(hangmans[self.wrong_guesses - 1]))
         else:
             print("\n".join(hangmans[-1]))
-            print("The word was:", " ".join(hidden_word))
+            if not self.game_over():
+                print("The word was:", self.word)
 
-    def game_over(self, hidden_word):
-      if self.wrong_guesses >= 7:
-            print("Game over! The word was:", " ".join(hidden_word))
-            return True
-      else:
-            return False
+    
           
 h1 = ["      ________",
       "     |       |",
