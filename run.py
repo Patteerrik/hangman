@@ -7,19 +7,25 @@ def print_welcome_message():
     print("Welcome to hangman!")
     print("Hangman is about guessing words.")
     print("You have 7 attempts")
+    ##print("Do you want to play? (y/n)")
 
-##def ask_continue():
-    ##while True:
-     ##choice = input("Do you want to continue to play the game?")
-     ##if choice == "y":
-       ## return True
-     ##elif choice == "n":
-       ## return False
-     ##else:
-        ##print("Please enter a valid response 'y' or 'n'")
-
+##print_welcome_message()
 
 def get_username():
+    print_welcome_message()
+
+    while True:
+        play = input("Do you want to play? (y/n): ").lower()
+        if play != "y" and play != "n":
+            print("Please enter 'y' or 'n'!")
+        elif play == "n":
+            print("See you next time. Goodbye!")
+            sys.exit()
+        elif play == "y":
+            break
+        
+        
+
     while True:
         try:
             name = input("Please enter your name here: ")
@@ -40,6 +46,7 @@ def choose_words():
     return random.choice(words)
 
 
+
 def play_game():
     while True:
         word = choose_words()
@@ -54,17 +61,24 @@ def play_game():
             print("Guessed letters:",guessed_letters)
             guess = input("Enter a letter: ").lower()
 
-            if not guess.isalpha() or len(guess) != 1:
-                print("Please enter a single letter!")
-                continue
-
             if guess == "exit":
-                print("Exiting the game!")
-                sys.exit()
+                choice = input("Do you want to exit the game? (y/n): ").lower()
+                if choice == "y":
+                    print("Exiting the game")
+                    sys.exit()
+                elif choice == "n":
+                    continue
+                else:
+                    print("Invalid choice. Please enter 'y' or 'n'")
+                    continue
+
+            if not guess.isalpha() or len(guess) != 1:
+                    print("Please enter a single letter!")
+                    continue
 
             if guess in guessed_letters:
-                print("You have already guessed that letter!")
-                continue
+                    print("You have already guessed that letter!")
+                    continue
 
             guessed_letters.append(guess)
 
@@ -84,9 +98,6 @@ def play_game():
             elif game.wrong_guesses == 7:
                 print("The word was:", word)
                 
-           
-            
-
         while True:
             play_again = input("Do you want to play again? (y/n):").lower()
             if play_again == "n":
@@ -97,7 +108,6 @@ def play_game():
             else:
                 print("Please enter 'y' or 'n'!")
             
-
 play_game()
 
 
