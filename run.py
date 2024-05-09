@@ -43,18 +43,22 @@ print("Hello,", username)
 
 
 def choose_words():
-    return random.choice(words)
-
+    word_info = random.choice(words)
+    word = word_info["word"]
+    hint = word_info["hint"]
+    return word, hint
 
 
 def play_game():
     while True:
-        word = choose_words()
+        word, hint = choose_words()
         game = hangman.Hangman(word)
         print("New game is starting")
+        print("Hint:", hint)
      
         hidden_word = ["_"] * len(word)
         guessed_letters = []
+        word_guessed = False
    
         while "_" in hidden_word and not game.game_over():
             print("Current word:"," ".join(hidden_word))
@@ -92,11 +96,20 @@ def play_game():
                 game.display_hangman(hidden_word)
                 print("Incorrect!")
 
+            if "".join(hidden_word) == word:
+                print("The word was:", word)
+                word_guessed = True
+                break
+
+
         if game.game_over():
             if "_" not in hidden_word:
+                print("Current word:"," ".join(hidden_word))
                 print("The word was:", word)
             elif game.wrong_guesses == 7:
-                print("The word was:", word)
+                print("Game over! The word was:", word)
+            else:
+                 print("The word was:", word)
                 
         while True:
             play_again = input("Do you want to play again? (y/n):").lower()
