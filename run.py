@@ -3,10 +3,10 @@ import sys
 from list import words
 import hangman
 
-
-print("Welcome to hangman!")
-print("Hangman is about guessing words.")
-print("You have 7 attempts")
+def print_welcome_message():
+    print("Welcome to hangman!")
+    print("Hangman is about guessing words.")
+    print("You have 7 attempts")
 
 ##def ask_continue():
     ##while True:
