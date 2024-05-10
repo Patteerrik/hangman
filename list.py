@@ -1,3 +1,4 @@
+## Inspiration from https://www.w3schools.com/python/python_dictionaries.asp
 words = [
 
      {"word": "black", "hint": "color"},

@@ -2,6 +2,11 @@ import random
 import sys
 from list import words
 import hangman
+## From https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+import pyfiglet 
+  
+result = pyfiglet.figlet_format("Hangman") 
+print(result)
 
 def print_welcome_message():
     print("Welcome to hangman!")
