@@ -2,6 +2,7 @@ import random
 import sys
 from list import words
 import hangman
+from colorama import Fore, Style
 ## From https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
 import pyfiglet 
   
@@ -95,11 +96,11 @@ def play_game():
                 for i, letter in enumerate(word):
                     if letter == guess:
                         hidden_word[i] = guess
-                print("Correct!")
+                print(Fore.GREEN + "Correct!" + Fore.RESET)
             else:
                 game.update_wrong_guesses()
                 game.display_hangman(hidden_word)
-                print("Incorrect!")
+                print(Fore.RED + "Incorrect!" + Fore.RESET)
 
             if "".join(hidden_word) == word:
                 print("The word was:", word)
