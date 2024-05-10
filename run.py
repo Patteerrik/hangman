@@ -12,9 +12,6 @@ def print_welcome_message():
     print("Welcome to hangman!")
     print("Hangman is about guessing words.")
     print("You have 7 attempts")
-    ##print("Do you want to play? (y/n)")
-
-##print_welcome_message()
 
 def get_username():
     print_welcome_message()
@@ -29,8 +26,6 @@ def get_username():
         elif play == "y":
             break
         
-        
-
     while True:
         try:
             name = input("Please enter your name here:\n ")
@@ -45,14 +40,11 @@ def get_username():
 username = get_username()
 print("Hello,", username)
 
-
-
 def choose_words():
     word_info = random.choice(words)
     word = word_info["word"]
     hint = word_info["hint"]
     return word, hint
-
 
 def play_game():
     while True:
@@ -106,13 +98,9 @@ def play_game():
                 word_guessed = True
                 break
 
-
         if game.game_over():
             if "_" not in hidden_word:
                 print("Current word:"," ".join(hidden_word))
-                ##print("The word was:", word)
-            ##elif game.wrong_guesses == 7:
-                ##print("Game over! The word was:", word)
             else:
                  print("Game over! The word was:", word)
                 
