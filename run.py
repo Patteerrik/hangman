@@ -2,9 +2,8 @@ import random
 import sys
 from list import words
 import hangman
-from colorama import Fore, Style
-## From https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
-import pyfiglet 
+from colorama import Fore, Style ## From https://pypi.org/project/colorama/
+import pyfiglet ## From https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
   
 result = pyfiglet.figlet_format("Hangman") 
 print(result)
