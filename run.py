@@ -59,7 +59,7 @@ def play_game():
    
         while "_" in hidden_word and not game.game_over():
             print("Current word:"," ".join(hidden_word))
-            print("Guessed letters:",guessed_letters)
+            print("Guessed letters:",', '.join(guessed_letters))
             guess = input("Enter a letter:\n ").lower()
 
             if guess == "exit":
