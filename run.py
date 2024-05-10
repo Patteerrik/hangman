@@ -105,11 +105,11 @@ def play_game():
         if game.game_over():
             if "_" not in hidden_word:
                 print("Current word:"," ".join(hidden_word))
-                print("The word was:", word)
-            elif game.wrong_guesses == 7:
-                print("Game over! The word was:", word)
+                ##print("The word was:", word)
+            ##elif game.wrong_guesses == 7:
+                ##print("Game over! The word was:", word)
             else:
-                 print("The word was:", word)
+                 print("Game over! The word was:", word)
                 
         while True:
             play_again = input("Do you want to play again? (y/n):").lower()
