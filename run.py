@@ -20,7 +20,7 @@ def get_username():
     print_welcome_message()
 
     while True:
-        play = input("Do you want to play? (y/n): ").lower()
+        play = input("Do you want to play? (y/n):\n ").lower()
         if play != "y" and play != "n":
             print("Please enter 'y' or 'n'!")
         elif play == "n":
@@ -33,7 +33,7 @@ def get_username():
 
     while True:
         try:
-            name = input("Please enter your name here: ")
+            name = input("Please enter your name here:\n ")
             if len(name) >= 3:
                 return name
             else:
@@ -68,10 +68,10 @@ def play_game():
         while "_" in hidden_word and not game.game_over():
             print("Current word:"," ".join(hidden_word))
             print("Guessed letters:",guessed_letters)
-            guess = input("Enter a letter: ").lower()
+            guess = input("Enter a letter:\n ").lower()
 
             if guess == "exit":
-                choice = input("Do you want to exit the game? (y/n): ").lower()
+                choice = input("Do you want to exit the game? (y/n):\n ").lower()
                 if choice == "y":
                     print("Exiting the game")
                     sys.exit()
@@ -117,7 +117,7 @@ def play_game():
                  print("Game over! The word was:", word)
                 
         while True:
-            play_again = input("Do you want to play again? (y/n):").lower()
+            play_again = input("Do you want to play again? (y/n):\n ").lower()
             if play_again == "n":
                 print("Thank you for playing!")
                 return
