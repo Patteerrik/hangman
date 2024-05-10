@@ -5,7 +5,7 @@ import hangman
 from colorama import Fore, Style ## From https://pypi.org/project/colorama/
 import pyfiglet ## From https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
   
-result = pyfiglet.figlet_format("Hangman", font="slant", width=80) 
+result = pyfiglet.figlet_format("Hangman", font="small") 
 print(result)
 
 def print_welcome_message():
