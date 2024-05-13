@@ -53,8 +53,9 @@ def play_game():
         game = hangman.Hangman(word)
         print("New game is starting...")
         time.sleep(1)
-        print("Hint:", hint)
-     
+        ##print("Hint:", hint)
+        print("The word is:", hint)
+
         hidden_word = ["_"] * len(word)
         guessed_letters = []
         word_guessed = False
