@@ -4,6 +4,7 @@ from list import words
 import hangman
 from colorama import Fore, Style ## From https://pypi.org/project/colorama/
 import pyfiglet ## From https://www.geeksforgeeks.org/python-ascii-art-using-pyfiglet-module/
+import time
   
 result = pyfiglet.figlet_format("Hangman", font="small") 
 print(result)
@@ -50,7 +51,8 @@ def play_game():
     while True:
         word, hint = choose_words()
         game = hangman.Hangman(word)
-        print("New game is starting")
+        print("New game is starting...")
+        time.sleep(1)
         print("Hint:", hint)
      
         hidden_word = ["_"] * len(word)
