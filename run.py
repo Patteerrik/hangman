@@ -89,18 +89,18 @@ def play_game():
                 for i, letter in enumerate(word):
                     if letter == guess:
                         hidden_word[i] = guess
-                print(Fore.GREEN + "Correct!" + Fore.RESET)
+                print(Fore.GREEN + "Correct!" + Fore.RESET) ## Makes Correct green
             else:
                 game.update_wrong_guesses()
                 game.display_hangman(hidden_word)
-                print(Fore.RED + "Incorrect!" + Fore.RESET)
+                print(Fore.RED + "Incorrect!" + Fore.RESET) ## Makes Red green
 
             if "".join(hidden_word) == word:
                 print("The word was:", word)
                 word_guessed = True
                 break
 
-        if game.game_over():
+        if game.game_over(): ## Check if game is over
             if "_" not in hidden_word:
                 print("Current word:"," ".join(hidden_word))
             else:
