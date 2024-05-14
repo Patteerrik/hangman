@@ -5,6 +5,12 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 ![Alt text](README-Images/README-Am_I_Responsive.png)
 
+## Flowchart
+
+## Features
+
+## Features left to implement
+
 ## Testing
 
 ### Validator testing 
@@ -27,5 +33,11 @@ It is a game about guessing words that will test the users creativity. A fun and
 | Guess correct word | "Correct!. The word was: (correct). Do you want to play again? (y/n):" appears | "Correct!. The word was: (correct). Do you want to play again? (y/n):" appears |
 | Guess wrong 7 times | Last level of hangman with the message Incorrect!. Game over! The word was: (word). Do you want to play again? (y/n): appears | Last level of hangman with the message Incorrect!. Game over! The word was: (word). Do you want to play again? (y/n): appears |
 | Type "exit" during game | "Do you want to exit the game? (y/n):" appears | "Do you want to exit the game? (y/n):" appears |
-| Type "y" when aksed to exit game | "Exiting the game" appear | "Exiting the game" appear |
-| Type "n" when aksed to exit game | --- |--- |
+| Type "y" when asked to exit game | "Exiting the game" appears | "Exiting the game" appears |
+| Type "n" when asked to exit game | Game continues | Game continues |
+
+## Bugs and fixes
+
+## Deployment
+
+## Credits
