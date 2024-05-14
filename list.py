@@ -1,4 +1,4 @@
-## Inspiration from https://www.w3schools.com/python/python_dictionaries.asp
+#  Inspiration from https://www.w3schools.com/python/python_dictionaries.asp
 words = [
 
      {"word": "black", "hint": "color"},
@@ -32,5 +32,4 @@ words = [
      {"word": "west", "hint": "direction"},
      {"word": "east", "hint": "direction"},
      {"word": "farewell", "hint": "goodbye"},
-
 ]

@@ -6,7 +6,6 @@ class Hangman:
 
     def game_over(self):
         return self.wrong_guesses >= 7
-            
 
     def update_wrong_guesses(self):
         self.wrong_guesses += 1
@@ -20,8 +19,7 @@ class Hangman:
             if not self.game_over():
                 print("The word was:", self.word)
 
-    
-          
+
 h1 = ["      ________",
       "     |       |",
       "     |        ",
@@ -91,4 +89,3 @@ h7 = ["      ________",
       "     |        ",
       "     |        ",
       " ____|____    "]
-
