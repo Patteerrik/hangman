@@ -5,3 +5,10 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 ![Alt text](README-Images/README-Am_I_Responsive.png)
 
+## Validator testing 
+
+* run.py
+
+* hangman.py
+
+* list.py
