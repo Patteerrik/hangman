@@ -69,6 +69,7 @@ def play_game():
         guessed_letters = []
         word_guessed = False
 
+
         while "_" in hidden_word and not game.game_over():
             print("Current word:", " ".join(hidden_word))
             print("Guessed letters:", ', '.join(guessed_letters))
@@ -123,7 +124,7 @@ def play_game():
             play_again = input("Do you want to play again? (y/n):\n ").lower()
             if play_again == "n":
                 print("Thank you for playing!")
-                return
+                break
             elif play_again == "y":
                 break
             else:
