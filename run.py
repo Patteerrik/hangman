@@ -82,7 +82,7 @@ def play_game():
                     print("Exiting the game")
                     sys.exit()
                 elif choice == "n":
-                    break
+                    continue
                 else:
                     print("Invalid choice. Please enter 'y' or 'n'")
                     continue
