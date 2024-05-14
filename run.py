@@ -34,8 +34,10 @@ def get_username():
     while True:
         try:
             name = input("Please enter your name here:\n ")
-            if len(name) >= 3:
+            if name.isalpha() and len(name) >= 3:
                 return name
+            elif not name.isalpha():
+                print("Sorry. Letters only!")
             else:
                 print("Sorry. Username must be at least 3 letters or more")
         except KeyboardInterrupt:
@@ -79,7 +81,7 @@ def play_game():
                     print("Exiting the game")
                     sys.exit()
                 elif choice == "n":
-                    continue
+                    break
                 else:
                     print("Invalid choice. Please enter 'y' or 'n'")
                     continue
