@@ -13,6 +13,10 @@ It is a game about guessing words that will test the users creativity. A fun and
 
   ![Alt text](README-Images/README_welcome_message.png)
 
+* Goodbuy message
+
+  ![Alt text](README-Images/README_no_play.png)
+
 * Enter username
 
   ![Alt text](README-Images/README_username.png)
