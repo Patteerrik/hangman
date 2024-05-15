@@ -9,13 +9,17 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 ## Features
 
+
+
 ## Features left to implement
 
 ## Testing
 
 ### Validator testing 
 
-* run.py, hangman.py and list.py
+#### run.py, hangman.py and list.py
+
+* No errors where found using [CI Python Linter](https://pep8ci.herokuapp.com/#)
 
 ![Alt text](README-Images/README_python_validator.png)
 
@@ -41,3 +45,6 @@ It is a game about guessing words that will test the users creativity. A fun and
 ## Deployment
 
 ## Credits
+
+* My mentor Gareth McGirr
+* Roman from Code Institute who help with resolving deployment issues
