@@ -3,9 +3,13 @@
 * Hangman is a python terminal, wich runs in the Code Insitute mock terminal on Heroku.
 It is a game about guessing words that will test the users creativity. A fun and perfect game for anyone who wants a brake from everyday stress. 
 
-![Alt text](README-Images/README-Am_I_Responsive.png)
+  ![Alt text](README-Images/README-Am_I_Responsive.png)
 
 ## Flowchart
+
+* Flowchart was created using [lucidchart](https://www.lucidchart.com/pages/)
+
+  ![Alt text]()
 
 ## Features
 
@@ -55,7 +59,7 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 * No errors where found using [CI Python Linter](https://pep8ci.herokuapp.com/#)
 
-![Alt text](README-Images/README_python_validator.png)
+  ![Alt text](README-Images/README_python_validator.png)
 
 ### Manuell testing
 
