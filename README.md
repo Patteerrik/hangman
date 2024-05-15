@@ -9,7 +9,17 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 ## Features
 
+* Welcome message
 
+![Alt text]()
+
+* Enter username
+
+![Alt text]()
+
+* New game is starting
+
+![Alt text]()
 
 ## Features left to implement
 
