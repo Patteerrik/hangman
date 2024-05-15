@@ -15,6 +15,8 @@ print(result)
 def print_welcome_message():
     print("Welcome to hangman!")
     print("Hangman is about guessing words.")
+    print("The word is hidden in the beginning")
+    print("Correct guessed letters will reveal the word")
     print("You have 7 attempts")
 
 
