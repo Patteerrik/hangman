@@ -126,7 +126,8 @@ def play_game():
             play_again = input("Do you want to play again? (y/n):\n ").lower()
             if play_again == "n":
                 print("Thank you for playing!")
-                break
+                ##break
+                sys.exit()
             elif play_again == "y":
                 break
             else:
