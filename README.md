@@ -9,7 +9,7 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 * Flowchart was created using [lucidchart](https://www.lucidchart.com/pages/)
 
-  ![Alt text]()
+  ![Alt text](README-Images/README_flowchart.png)
 
 ## Features
 
@@ -51,6 +51,8 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 ## Features left to implement
 
+* Add different difficulty levels
+
 ## Testing
 
 ### Validator testing 
@@ -80,7 +82,23 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 ## Bugs and fixes
 
+* No bugs have been detected
+
 ## Deployment
+
+* This game was deployed to Heroku
+  * Sign up for Heroku
+  * Click "create new app"
+  * Give the app a unique name
+  * Click settings in the section on top of the page
+  * Scroll down and press "Add buildpack"
+  * Click python first then nodejs (in that order)
+  * Click deploy in the section on top of the page
+  * Select method "Connect to Github" then press "Connect to Github" button 
+  * Search for hangman
+  * Click connect
+  * Click "Enable automatic deploys" button to enable Heroku to rebuild the app when a new change is pushed to Github
+  
 
 ## Credits
 
