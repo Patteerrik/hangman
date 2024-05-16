@@ -11,6 +11,10 @@ It is a game about guessing words that will test the users creativity. A fun and
 
   ![Alt text](README-Images/README_flowchart.png)
 
+## Technology used
+
+* Python, Github and Heroku
+
 ## Features
 
 * Welcome message
@@ -41,7 +45,7 @@ It is a game about guessing words that will test the users creativity. A fun and
 
   ![Alt text](README-Images/README_Correct_guessed_word.png)
 
-* Incorrect guessd word and last level of hangman
+* Incorrect guessed word and last level of hangman
 
   ![Alt text](README-Images/README_Incorrect_guessed_word.png)
 
@@ -63,7 +67,7 @@ It is a game about guessing words that will test the users creativity. A fun and
 
   ![Alt text](README-Images/README_python_validator.png)
 
-### Manuell testing
+### Manual testing
 
 | Action | Expectation| Result|
 | --- | --- | --- |
@@ -72,6 +76,8 @@ It is a game about guessing words that will test the users creativity. A fun and
 | Type less than 3 letter when asked to enter username | A message "Sorry. Username must be at least 3 letters or more" appears | A message "Sorry. Username must be at least 3 letters or more" appears |
 | Type in numbers when asked to enter username |  A message "Sorry. Letters only!" appears | A message "Sorry. Letters only!" appears |
 | Type in username (3 letter or more) | A message "Hello, username" appears and the game starts | A message "Hello, username" appears and game the starts |
+| Guess more than one letter | A message "Please enter a single letter!" appears | A message "Please enter a single letter!" appears |
+| Guess a number | A message "Please enter a single letter!" appears | A message "Please enter a single letter!" appears |
 | Guess an incorrect letter | A red message "Incorrect" with the first level of hangman appears and letter is placed after "Guessed letters:" | A red message "Incorrect" with the first level of hangman appears and letter is placed after "Guessed letters:" |
 | Guess an correct letter | A green message "Correct" appears and letter is placed after "Current word:" | A green message "Correct" appears and letter is placed after "Current word:" |
 | Guess correct word | "Correct!. The word was: (correct). Do you want to play again? (y/n):" appears | "Correct!. The word was: (correct). Do you want to play again? (y/n):" appears |
@@ -79,6 +85,7 @@ It is a game about guessing words that will test the users creativity. A fun and
 | Type "exit" during game | "Do you want to exit the game? (y/n):" appears | "Do you want to exit the game? (y/n):" appears |
 | Type "y" when asked to exit game | "Exiting the game" appears | "Exiting the game" appears |
 | Type "n" when asked to exit game | Game continues | Game continues |
+
 
 ## Bugs and fixes
 
