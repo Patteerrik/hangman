@@ -1,8 +1,8 @@
 class Hangman:
-    def __init__(self, word, guessed_letters):
-        self.word = word
-        self.guessed_letters = guessed_letters
-        self.wrong_guesses = 0
+    def __init__(self, word):
+        self.word = word # The word to guess
+        self.guessed_letters = []
+        self.wrong_guesses = 0 # Counts wrong guesses
 
     def game_over(self):
         # Checks if guesses is 7 or more
@@ -13,13 +13,13 @@ class Hangman:
         self.wrong_guesses += 1
 
     def display_hangman(self, hidden_word):
-        hangmans = [h1, h2, h3, h4, h5, h6, h7]
-        if self.wrong_guesses <= 7:
-            print("\n".join(hangmans[self.wrong_guesses - 1]))
+        hangmans = [h1, h2, h3, h4, h5, h6, h7] # Hangman levels
+        if self.wrong_guesses <= 7: # If guesses is less than or equal to 7
+            print("\n".join(hangmans[self.wrong_guesses - 1])) # Displays current hangman
         else:
-            print("\n".join(hangmans[-1]))
+            print("\n".join(hangmans[-1])) # Display last level Hangman
             if not self.game_over():
-                print("The word was:", self.word)
+                 print("The word was:", self.word)
 
 
 # Hangman at different levels
