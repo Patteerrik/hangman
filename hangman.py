@@ -1,7 +1,7 @@
 class Hangman:
     def __init__(self, word):
         self.word = word # The word to guess
-        self.guessed_letters = []
+        self.guessed_letters = [] # Stores guessed letters
         self.wrong_guesses = 0 # Counts wrong guesses
 
     def game_over(self):

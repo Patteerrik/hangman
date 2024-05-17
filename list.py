@@ -1,4 +1,5 @@
-#  Inspiration from https://www.w3schools.com/python/python_dictionaries.asp
+# List with words and hints for the game
+# Inspiration from https://www.w3schools.com/python/python_dictionaries.asp
 words = [
 
      {"word": "black", "hint": "color"},
