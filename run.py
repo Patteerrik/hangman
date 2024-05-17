@@ -68,16 +68,17 @@ def choose_words(): ## Function to choose word and hint from list.py
 
 
 def play_game(): ## Function for playing the game
+    guessed_letters = [] # Empty list to store guessed letters
     while True: ## Loop 
         word, hint = choose_words() # Choose a word and hint for every new game
-        game = hangman.Hangman(word) # Creates a new hangman
+        game = hangman.Hangman(word, guessed_letters) # Creates a new hangman
         print("New game is starting...")
         time.sleep(1) ## 1 Second delay
         print("Hint:", hint) # Displays the hint
 
 
         hidden_word = ["_"] * len(word) # Underscores that match hidden word length
-        guessed_letters = [] # Empty list to store guessed letters
+        
         word_guessed = False # Indicate if guessed word is correct
 
         # Game continue if not game over 

@@ -1,13 +1,15 @@
 class Hangman:
-    def __init__(self, word):
+    def __init__(self, word, guessed_letters):
         self.word = word
-        self.guessed_letters = []
+        self.guessed_letters = guessed_letters
         self.wrong_guesses = 0
 
     def game_over(self):
+        # Checks if guesses is 7 or more
         return self.wrong_guesses >= 7
 
     def update_wrong_guesses(self):
+        # Increase number of wrong guesses
         self.wrong_guesses += 1
 
     def display_hangman(self, hidden_word):
@@ -20,6 +22,7 @@ class Hangman:
                 print("The word was:", self.word)
 
 
+# Hangman at different levels
 h1 = ["      ________",
       "     |       |",
       "     |        ",
