@@ -21,7 +21,7 @@ It is about guessing words that will test the users creativity. A fun and perfec
 
   ![Alt text](README-Images/README_welcome_message.png)
 
-* Goodbuy message
+* Goodbye message
 
  ![Alt text](README-Images/README_no_play.png)
 
