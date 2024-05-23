@@ -81,7 +81,7 @@ It is about guessing words that will test the users creativity. A fun and perfec
 | Guess an incorrect letter | A red message "Incorrect" with the first level of hangman appears and letter is placed after "Guessed letters:" | A red message "Incorrect" with the first level of hangman appears and letter is placed after "Guessed letters:" |
 | Guess an correct letter | A green message "Correct" appears and letter is placed after "Current word:" | A green message "Correct" appears and letter is placed after "Current word:" |
 | Guess correct word | "Correct!. The word was: (word). Do you want to play again? (y/n):" appears | "Correct!. The word was: (word). Do you want to play again? (y/n):" appears |
-| Guess wrong 7 times | Last level of hangman with the message Incorrect!. Game over! The word was: (word). Do you want to play again? (y/n): appears | Last level of hangman with the message Incorrect!. Game over! The word was: (word). Do you want to play again? (y/n): appears |
+| Guess wrong 7 times | Last level of hangman with the message Incorrect! Game over! The word was: (word). Do you want to play again? (y/n): appears | Last level of hangman with the message Incorrect! Game over! The word was: (word). Do you want to play again? (y/n): appears |
 | Type "exit" during game | "Do you want to exit the game? (y/n):" appears | "Do you want to exit the game? (y/n):" appears |
 | Type "y" when asked to exit game | "Exiting the game" appears | "Exiting the game" appears |
 | Type "n" when asked to exit game | Game continues | Game continues |
