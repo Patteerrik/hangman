@@ -23,7 +23,7 @@ It is a game about guessing words that will test the users creativity. A fun and
 
 * Goodbuy message
 
-  ![Alt text](README-Images/README_no_play.png)
+ ![Alt text](README-Images/README_no_play.png)
 
 * Enter username
 
