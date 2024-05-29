@@ -6,7 +6,8 @@ from list import words
 # Import words from list.py
 import hangman
 # Imports from hangman.py
-from colorama import Fore, Style  # Import color to make game more appealing
+from colorama import Fore, Style
+# Import color to make the game more appealing
 # From https://pypi.org/project/colorama/
 import pyfiglet  # Import the pyfiglet module to create ASCII art
 import time
