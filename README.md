@@ -1,7 +1,8 @@
 # HANGMAN
 
 * Hangman is a game which runs in the Code Insitute mock terminal on Heroku.
-It is about guessing words that will test the user's creativity. A fun and perfect game for anyone who wants a break from everyday stress. 
+It is about guessing words that will test the user's creativity.  A fun game for anyone who wants a break from everyday stress. As a user, I want to be challenged, encouraged to finish the game and get a sense of pride after completing the game. Hangman achieves that.
+[The live version of the game can be found here](https://haangman-519d4894d969.herokuapp.com/)
 
   ![Alt text](README-Images/README-Am_I_Responsive.png)
 
