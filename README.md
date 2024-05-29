@@ -75,7 +75,7 @@ It is about guessing words that will test the user's creativity. A fun and perfe
 | Type "y" when game ask if user wants to play | A message "Please enter your name here:" appears | A message "Please enter your name here:" appears |
 | Type less than 3 letter when asked to enter username | A message "Sorry. Username must be at least 3 letters or more" appears | A message "Sorry. Username must be at least 3 letters or more" appears |
 | Type in numbers when asked to enter username |  A message "Sorry. Letters only!" appears | A message "Sorry. Letters only!" appears |
-| Type in username (3 letters or more) | A message "Hello, username" appears and the game starts | A message "Hello, username" appears and the game the starts |
+| Type in username (3 letters or more) | A message "Hello, username" appears and the game starts | A message "Hello, username" appears and the game starts |
 | Guess more than one letter | A message "Please enter a single letter!" appears | A message "Please enter a single letter!" appears |
 | Guess a number | A message "Please enter a single letter!" appears | A message "Please enter a single letter!" appears |
 | Guess an incorrect letter | A red message "Incorrect" with the first level of hangman appears and the letter is placed after "Guessed letters:" | A red message "Incorrect" with the first level of hangman appears and the letter is placed after "Guessed letters:" |

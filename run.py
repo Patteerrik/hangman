@@ -30,7 +30,7 @@ def print_welcome_message():
 def get_username():
     print_welcome_message()  # Welcome message
 
-    while True:  # Loop if the user wnats to play
+    while True:  # Loop if the user wants to play
         play = input("Do you want to play? (y/n):\n ").lower()
         # If user answers anything other than 'y/n'
         if play != "y" and play != "n":

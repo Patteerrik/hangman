@@ -22,8 +22,11 @@ class Hangman:
             if not self.game_over():
                 print("The word was:", self.word)
 
-
+# Structure inspiration from
+# https://youtu.be/fB4Yp72ngR4?si=T-12nbJ3CoUohh39
 # Hangman at different levels
+
+
 h1 = ["      ________",
       "     |       |",
       "     |        ",
