@@ -1,7 +1,7 @@
 # HANGMAN
 
 * Hangman is a game which runs in the Code Insitute mock terminal on Heroku.
-It is about guessing words that will test the users creativity. A fun and perfect game for anyone who wants a brake from everyday stress. 
+It is about guessing words that will test the user's creativity. A fun and perfect game for anyone who wants a break from everyday stress. 
 
   ![Alt text](README-Images/README-Am_I_Responsive.png)
 
@@ -63,7 +63,7 @@ It is about guessing words that will test the users creativity. A fun and perfec
 
 #### run.py, hangman.py and list.py
 
-* No errors where found using [CI Python Linter](https://pep8ci.herokuapp.com/#)
+* No errors were found using [CI Python Linter](https://pep8ci.herokuapp.com/#)
 
   ![Alt text](README-Images/README_python_validator.png)
 
